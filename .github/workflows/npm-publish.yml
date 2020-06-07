@@ -34,7 +34,7 @@ jobs:
       run: yarn build
       
     - name: Install Surge
-      run: npx install --global surge
+      run: npx install -global surge
       
     - name: Deploye to surge
-      run: surge ./build.project2.surge.su ${{secrets.APP}}  
+      run: surge ./build.project2.surge.sh ${{secrets.APP}}  
