@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name : install Node JS
-        uses: actions/setup-node@v2-beta
-       with:
+       uses: actions/setup-node@v2-beta
+      with :
         node-version: 12
           
      - uses: borales/actions-yarn@v2.0.0
