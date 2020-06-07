@@ -12,21 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name : install Node JS
-       uses: actions/setup-node@v2-beta
+        
+     # Runs a single command using the runners shell
+    - name: installing Node 
+      uses: actions/setup-node@v2-beta
       with :
         node-version: 12
-          
-     - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install # will run `yarn install` command  
-          
-     - name: Build React App
-       run: Yard Build
-       
-     - name: install surge
-       run: npx install --globally surge
-       
-    - name: Deploy to Surge
-      run: surge ./build.project2.surge.su ${{secrets.REACTAPP}}
         
+        
+          
