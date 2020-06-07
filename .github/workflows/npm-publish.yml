@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        
-     # Runs a single command using the runners shell
+
     - name: installing Node 
       uses: actions/setup-node@v2-beta
       with :
