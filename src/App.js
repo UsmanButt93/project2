@@ -18,7 +18,7 @@ function App() {
         >
           Learn React
 
-          LEarning REact
+          its working on live
         </a>
       </header>
     </div>
