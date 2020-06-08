@@ -5,7 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div>Hello Yniverse</div>
+  <React.StrictMode>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
