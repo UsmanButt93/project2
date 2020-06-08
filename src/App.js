@@ -16,9 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-
-          its working on live    AGAIN
+          Update it
         </a>
       </header>
     </div>
