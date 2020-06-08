@@ -18,9 +18,7 @@ function App() {
         >
           Learn React
 
-          Jack is Back
-
-         Redo it..
+          LEarning REact
         </a>
       </header>
     </div>
