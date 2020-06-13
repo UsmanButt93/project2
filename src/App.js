@@ -8,7 +8,6 @@ function App() {
 
 let [count, setCount] = useState(1); // Creating Array
 let [isMorning, setMorning] = useState(false);
-let [Multiply, multi] = useState(0)
   return (
 
 
