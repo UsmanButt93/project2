@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Message from './Message';
-import Multi from './Multi';
 import './App.css';
 import './Message.css';
 
