@@ -1,40 +1,28 @@
-import React, {useState} from 'react';
-import Message from './Message';
+import React from 'react';
+import { Header } from './components/Header';
+import { Balance } from './components/Balance';
+import { IncomeExpenses } from './components/IncomeExpenses';
+import { TransactionList } from './components/TransactionList';
+import { AddTransaction } from './components/AddTransaction';
+import { GlobalProvider } from './context/GlobalState';
+
 import './App.css';
-import './Message.css';
+
 
 
 function App() {
-
-let [count, setCount] = useState(1); // Creating Array
-let [isMorning, setMorning] = useState(false);
   return (
-
-
-
-<div className={`box ${isMorning ? 'dayLight' : '' }`}>
-
-
-<Message counter={count} /> 
-
-
-<button onClick={  ()=> setCount(count +1) } >   
-   + Add
-   </button> 
-   <button onClick={  ()=> setCount(count -1) } >   
-    - Min
-   </button>
-
-  
-  
+    <GlobalProvider>
      
-  <h1>It is  {isMorning ? 'Morning Time ' : 'Night Time' }</h1> 
-  
-<button onClick={ ()=> setMorning(!isMorning)}> Update Day</button>
-</div>
+      <div className="container" >
 
-
-  )
+      <div id="topdiv"> <Header /> <Balance />
+        <IncomeExpenses /></div>
+        <div id="translist"><TransactionList /></div>
+        <AddTransaction />
+      
+    </div></GlobalProvider>
+  );
 }
 
 export default App;

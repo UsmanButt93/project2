@@ -1,7 +1,0 @@
-.box{ height: 100vh; background-image:url(./daynight1.jpg); color: white; text-align: center; padding: 30px;;}
-
-.dayLight { background-color: cornflowerblue; background-image:url(./daynight.jpg);}
-
-button{ width: 300px; height:50px; padding:0px; margin:0px; background-color: crimson; border: 0px; color:white; font-weight: 600; font-size:17px; border: none; outline: none; border-radius: 25px;}
-
-.count{ font-size: 90px; display: block; width: fit-content;  margin: 0px auto 40px auto; padding: 20px 50px 20px 50px; font-weight: bold; border:3px; border: cornsilk solid; border-color: white; border-radius: 100px; }
